@@ -12,7 +12,7 @@ services:
       MYSQL_PASSWORD: password
       MYSQL_DATABASE: test
       MYSQL_PORT: 3306
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/test
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/test?createIfDatabaseNotExist=true
     depends_on:
       - mysqldb
   mysqldb:
